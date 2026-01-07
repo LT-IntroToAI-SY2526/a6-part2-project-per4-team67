@@ -78,11 +78,11 @@ def visualize_data(data):
     # Your code here
     # Hint: Use subplots like in Part 2!
     
-    numeric_features = ['age', 'bmi', 'children']
+    numeric_features = ['age', 'bmi', 'children', 'smoker']
     
     plt.figure(figsize=(12, 4))
     for i, feature in enumerate(numeric_features):
-        plt.subplot(1, 3, i + 1)
+        plt.subplot(1, 4, i + 1)
         plt.scatter(data[feature], data[TARGET_COLUMN])
         plt.xlabel(feature)
         plt.ylabel(TARGET_COLUMN)
